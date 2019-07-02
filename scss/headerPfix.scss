@@ -1,0 +1,39 @@
+
+@import "basic/var1.scss";
+@import "mixins/mixin1.scss";
+@import "page/moblie.scss";
+@include title-modules(
+h1 rgba(0,0,0,1) 12px 'font_title',
+h2 rgba(0,0,0,.8) 48px 'font_title',
+h3 rgba(0,0,0,.6) 36px font_title,
+h4 rgba(0,0,0,.4) 28px font_title,
+h5 rgba(0,0,0,.3) 20px font_title,
+p rgba(0,0,0,.3) 16px font_2,
+);
+//font_title
+
+header{
+	.header_cloud {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100px;
+		position: absolute;
+		overflow: hidden;
+		z-index: -3;
+		.cloudF{
+			width: 3500px;
+			height: 3450px;
+			border-radius: 50%;
+			background-image: linear-gradient(to top, #fbffe8 0%, #eef1f5 100%);
+			position: absolute;
+			left: -600px;
+			top: -3390px;
+			animation: cloudF 25s infinite linear;
+		}
+		@keyframes cloudF {
+			form {transform: rotate(0deg);}
+			to {transform: rotate(360deg);}
+		}
+	}
+}

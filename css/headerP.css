@@ -232,7 +232,9 @@ p {
   opacity: 0; }
 
 header {
-  padding-bottom: 10%; }
+  width: 100%;
+  padding-bottom: 10%;
+  position: fixrd; }
 
 .header_container {
   position: fixed;

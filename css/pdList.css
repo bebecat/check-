@@ -29,7 +29,7 @@
 .pdP_hero_wrapper {
   background-image: url("../scss/pdImg/bg/pd_bg01-1.png");
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -365,7 +365,7 @@
 .pd_Customize_container {
   background-image: url("../scss/pdImg/bg/pd_bg_03.png");
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   padding-top: 30px;
   height: 100vh;
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@
 .pd_footer_box {
   background-image: url("../scss/img/footerIamge.png");
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   padding: 3% 0;
   background-repeat: no-repeat; }
 
@@ -394,7 +394,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20% 0;
+  padding: 10%;
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
@@ -420,7 +420,8 @@
   width: 10%;
   right: 0;
   top: -20%;
-  z-index: 3; }
+  z-index: 3;
+  overflow: hidden; }
 
 .pd_Customize_container .fly_animal img {
   width: 100%; }
@@ -470,7 +471,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  animation: cusShake 2s ease 3;
+  animation: cusShake 2s ease infinite;
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 12px; }
@@ -479,7 +480,7 @@
   position: absolute;
   left: 40%;
   top: 65%;
-  animation: cusShake 2s ease 3;
+  animation: cusShake 2s ease infinite;
   transform: translate(-40%, -65%);
   text-align: center;
   font-size: 12px; }
